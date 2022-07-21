@@ -11,7 +11,7 @@ def install(what):
     subprocess.check_call([sys.executable, '-m', 'pip', 'install', what])
 
 if not os.path.exists("baserom.dol"):
-    print("baserom.dol does not exist. Place a SMG1 dol named baserom.dol in the root.")
+    print("baserom.dol does not exist. Place a SMG2 DOL named baserom.dol in the root.")
     sys.exit(1)
 else:
     print("Found baserom.dol...")
