@@ -55,13 +55,13 @@ void NameObj::setLinkedInfo(const JMapInfoIter &rIter) {
 }
 
 void NameObj::executeMovement() {
-    if ((mFlags & 0x1) != 1) {
+    if ((mFlags & 0x1) != (u32)1) {
         movement();
     }
 }
 
 void NameObj::requestSuspend() {
-    if ((mFlags & 4) == 4) {
+    if ((mFlags & 4) == (u32)4) {
         mFlags &= 0xFFFB;
     }
 
@@ -69,7 +69,7 @@ void NameObj::requestSuspend() {
 }
 
 void NameObj::requestResume() {
-    if ((mFlags & 2) == 2) {
+    if ((mFlags & 2) == (u32)2) {
         mFlags &= 0xFFFD;
     }
 
