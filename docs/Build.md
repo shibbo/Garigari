@@ -31,11 +31,25 @@
     
 <br>
     
-6. **Verify** your build:
+6. **Verify** your build with:
 
-    Check in any disassembler if the output function matches the input function manually. There will be a way to automatically check this soon.
+    ```sh
+    python check.py symbol_name object_name
+    ```
+
+    If your function is matching, then it will return with 0 errors. Be careful, as paired-single instructions are currently unsupported so those are ignored.
 
 <br>    
+
+7. **Update** your progress with:
+
+    ```sh
+    python progress.py
+    ```
+
+    This will update all of the functions and the progress badge.
+
+<br>   
     
 *For more information check the **[Contribution Guide]** .*
 

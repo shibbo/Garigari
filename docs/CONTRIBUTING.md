@@ -13,7 +13,12 @@ All pull requests and issues are welcome.
 Be sure that all of your submitted code <br>
 follows the guidelines that are listed below.
 
-When running `build`, it is **REQUIRED** that the output is `1:1`. There is no check script for Garigari yet, but there will be one eventually.
+When running `build.py`, it is **REQUIRED** that the output is `1:1`.
+
+After the code matches, be sure to run `scripts/check.py` <br>
+to check the function that you want to mark.
+
+If it matches, it will automatically be marked as decompiled.
 
 <br>
 
