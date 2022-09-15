@@ -77,11 +77,13 @@ void NameObj::requestResume() {
 }
 
 void NameObj::syncWithFlags() {
-    if ((mFlags & 2) == 2) {
+    if ((mFlags & 2) == (u32)2) {
         mFlags = mFlags & 0xFFFD | 1;
     }
 
-    if ((mFlags & 4) == 4) {
-        mFlags &= 0xFFFA;
+    if ((mFlags & 4) == (u32)4) {
+        u16 flag = mFlags & 0xFFFB;
+        flag &= ~0x1;
+        mFlags = flag;
     }
 }

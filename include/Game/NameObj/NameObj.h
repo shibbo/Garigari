@@ -25,8 +25,14 @@ public:
     void requestResume();
     void syncWithFlags();
 
-    const char* mName;      // _4
-    vu16 mFlags;             // _8
-    s16 mExecutionIdx;      // _A
-    JMapLinkInfo mLinkInfo; // _C
+    const char* mName;          // _4
+    vu16 mFlags;                // _8
+    s16 mExecutionIdx;          // _A
+    JMapLinkInfo mLinkInfo;     // _C
+};
+
+class NameObjFunction {
+public:
+    static void requestMovementOn(NameObj *);
+    static void requsetMovementOff(NameObj *);
 };

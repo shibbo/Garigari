@@ -23,8 +23,7 @@ def main(compile_non_matching, use_ninja, clean_ninja):
     flags = "-c -Cpp_exceptions off -stdinc -nodefaults -proc gekko -fp hard -lang=c++ -ipa file -inline auto -O4,s -rtti off -func_align 16 -sdata 4 -sdata2 4 -align powerpc -enum int -DRVL_SDK -DEPPC -DHOLLYWOOD_REV -DTRK_INTEGRATION -DGEKKO -DMTX_USE_PS -D_MSL_USING_MW_C_HEADERS -msgstyle gcc "
     includes = "-i . -I- -i include "
 
-    # TODO -- is this the same compiler used in SMG1?
-    default_compiler_path = pathlib.Path("GC/3.0a3/")
+    default_compiler_path = pathlib.Path("Wii/1.3/")
 
     compiler_exceptions = {
         #"source\JSystem\JKernel\JKRThread.cpp": "GC/2.5/"
